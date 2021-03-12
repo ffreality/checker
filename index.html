@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<body onload="OnLaunch">
+<body onload="myFunction()">
 
 <script>
-	function OnLaunch
-		{
-			const result = Math.random().toString(36).substring(2,7)
-            return result
-        }
+function myFunction() {
+    var random = Math.random().toString(36).substr(2, 36);
+    var time = new Date().getTime();
+    var url = 'https://ffreality.github.io/checker/'
+    window.location = url + random + time
+}
 </script>
 
 </body>
